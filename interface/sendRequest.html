@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>测试接口</title>
+    <meta charset="utf-8" />
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <style>
+        input[type=text]{
+            width:250px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><strong>GET请求</strong></h1>
+        <p>
+            请求地址:<input type="text" class="getUrl"  value="login.ashx?mode=&usr=&pwd=" />
+            <input type="button" value="send get" class="get" /><br />
+            服务器响应内容:<input type="text" class="callback-get" style="width:250px" readonly="readonly" />
+        </p>
+    </div>
+    <div>
+        <h1><strong>POST请求</strong></h1>
+        <p>
+            请求地址:<input type="text" class="postUrl" value="play.ashx"  /><br />
+            输入你要出的是剪刀还是石头还是布<br />
+            请求内容:<input type="text" class="postParmas" value="UserChoose=" />
+            <input type="button" value="send post" class="post" /><br />
+            服务器响应内容:<input type="text" class="callback-post"  readonly="readonly" />
+
+        </p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
